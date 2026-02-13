@@ -1,4 +1,4 @@
-package Houserent_system_YEproject03.utils;
+package HouseRentSystem_YEproject03.utils;
 
 import java.util.Scanner;
 
@@ -86,7 +86,7 @@ import java.util.Scanner;
                 c= str.charAt(0);
                 if (c!= '1' && c!= '2' &&
                         c!= '3' && c!= '4' && c!= '5') {
-                    System.out.print("选择错误，请重新输入：");
+                    System.out.print("选择错误，请重新输入：/選択エラーです。もう一度入力してください：");
                 } else break;
             }
             return c;
@@ -117,7 +117,7 @@ import java.util.Scanner;
                     n = Integer.parseInt(str);
                     break;
                 } catch (NumberFormatException e) {
-                    System.out.print("数字输入错误，请重新输入：");
+                    System.out.print("数字输入错误，请重新输入：/数値入力エラーです。もう一度入力してください：");
                 }
             }
             return n;
@@ -144,7 +144,7 @@ import java.util.Scanner;
                     n = Integer.parseInt(str);
                     break;
                 } catch (NumberFormatException e) {
-                    System.out.print("数字输入错误，请重新输入：");
+                    System.out.print("数字输入错误，请重新输入：/数値入力エラーです。もう一度入力してください：");
                 }
             }
             return n;
@@ -166,7 +166,7 @@ import java.util.Scanner;
         // 重要操作の前に強制確認を行い、
         // 誤操作を防止することを目的としている。
         public static char readConfirmSelection() {
-            System.out.println("请输入你的选择(Y/N): 请小心选择");
+            System.out.println("请输入你的选择(Y/N): 请小心选择/あなたの選択を入力してください(Y/N)：慎重に選択してください");
             char c;
             for (; ; ) {
                 String str = readKeyBoard(1, false).toUpperCase();
@@ -174,7 +174,7 @@ import java.util.Scanner;
                 if (c == 'Y' || c == 'N') {
                     break;
                 } else {
-                    System.out.print("选择错误，请重新输入：");
+                    System.out.print("选择错误，请重新输入：/選択エラーです。もう一度入力してください：");
                 }
             }
             return c;
@@ -197,7 +197,7 @@ import java.util.Scanner;
                     if (blankReturn) return line;
                 }
                 if (line.length() < 1 || line.length() > limit) {
-                    System.out.print("输入长度（不能大于" + limit + "）错误，请重新输入：");
+                    System.out.print("输入长度（不能大于" + limit + "）错误，请重新输入：/入力長さ（\" + limit + \"以下である必要があります）エラーです。もう一度入力してください：");
                     continue;
                 }
                 break;
