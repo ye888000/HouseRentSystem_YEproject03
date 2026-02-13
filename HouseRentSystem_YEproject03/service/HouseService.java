@@ -1,6 +1,6 @@
-package Houserent_system_YEproject03.service;
+package HouseRentSystem_YEproject03.service;
 
-import Houserent_system_YEproject03.domain.House;
+import HouseRentSystem_YEproject03.domain.House;
 /**
  * 【Service層】
  * 本类作为业务处理层，
@@ -67,7 +67,7 @@ import Houserent_system_YEproject03.domain.House;
     //   最も基本的なデータ構造で「複数オブジェクトを管理できる」業務層を実装するためである。
     public HouseService(int size) {
         houses = new House[size];
-        houses[0] = new House(1, "jack", "020554588", "墨田区", 72000, "未出租");
+        houses[0] = new House(1, "jack", "020554588", "墨田区", 72000, "未出租/未賃貸");
     }
 
     //采用顺序查找方式，这样可以方便地根据房屋ID查找对应的房屋信息
@@ -108,7 +108,7 @@ import Houserent_system_YEproject03.domain.House;
     //   必要に応じて将来的に拡張処理を追加することも可能。
     public boolean add(House newHouses) {
         if (houseNums == houses.length) {
-            System.out.println("数组已满，不能再添加了...");
+            System.out.println("数组已满，不能再添加了.../配列が満杯のため、これ以上追加できません...");
             return false;
         }
         newHouses.setId(++idCounter);
