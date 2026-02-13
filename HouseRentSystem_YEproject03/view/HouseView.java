@@ -1,8 +1,8 @@
-package Houserent_system_YEproject03.view;
+package HouseRentSystem_YEproject03.view;
 
-import Houserent_system_YEproject03.domain.House;
-import Houserent_system_YEproject03.service.HouseService;
-import Houserent_system_YEproject03.utils.Utility;
+import HouseRentSystem_YEproject03.domain.House;
+import HouseRentSystem_YEproject03.service.HouseService;
+import HouseRentSystem_YEproject03.utils.Utility;
 /**
  * 【View 層】
  * 本类属于View层。仅负责控制台交互与流程控制，不承担业务逻辑处理职责。同时将所有数据操作统一委托给 Service 层，以保证分层清晰。
